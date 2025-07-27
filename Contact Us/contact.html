@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sathishkumar Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/c9e3743fed.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header and Navigation -->
+    <header class="sticky-top bg-light shadow-lg">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <!-- Logo and Brand Name -->
+          <a
+            href="../index.html"
+            class="d-flex align-items-center text-decoration-none"
+          >
+            <img
+              src="../images/assets/my logo.png"
+              alt="Logo"
+              class="me-2"
+              style="width: 60px; height: 40px"
+            />
+            <span class="fw-bold transparent-text">SATHISH PORTFOLIO</span>
+          </a>
+
+          <!-- Navbar Toggler Button -->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Links -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../About Me/about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../Skills/skills.html"
+                  >Skills</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../Projects/project.html"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../Contact Us/contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+
+             <!-- Resume Button (Visible only on large screens) -->
+          <a href="../sathishkumar_web developer_Resume.pdf" download="Sathishkumar Webdeveloper Resume.pdf"
+          class="btn btn-primary ms-2 d-none d-lg-block" id="resumeButton">Resume</a>
+      </div>
+    </div>
+  </nav>
+</header>    
+
+    <!-- Contact Section Starts -->
+    <section class="contact-page-sec">
+      <div class="container">
+        <div class="row">
+          <!-- Address -->
+          <div class="col-md-4">
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fas fa-map-marked"></i>
+                </div>
+                <div class="contact-info-text">
+                  <h2>Address</h2>
+                  <span>59/21 C, Sundarapuram, Coimbatore</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="col-md-4">
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-info-text">
+                  <h2>E-mail</h2>
+                  <span>sathishkumar24cse@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="col-md-4">
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-info-text">
+                  <h2>Phone Number</h2>
+                  <span>+91 7530090456</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="row">
+          <div class="col-md-8">
+            <div class="contact-page-form">
+              <h2>Get in Touch</h2>
+              <form method="post" id="contactForm">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="single-input-field">
+                      <input
+                        type="text"
+                        placeholder="Enter Your Name"
+                        name="name"
+                        maxlength="20"
+                        oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g, '')"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="single-input-field">
+                      <input
+                        type="email"
+                        placeholder="E-mail"
+                        name="email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="single-input-field">
+                      <input
+                        type="text"
+                        placeholder="Enter 10 Digit Phone"
+                        name="phone"
+                        id="phone"
+                        maxlength="10"
+                        oninput="this.value=this.value.replace(/[^0-9]/g, '')"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="single-input-field">
+                      <input
+                        type="text"
+                        placeholder="Subject"
+                        name="subject"
+                        oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g, '')"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12 message-input">
+                    <div class="single-input-field">
+                      <textarea
+                        placeholder="Write Your Message"
+                        name="message"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="single-input-fieldsbtn">
+                    <input type="submit" value="Send Now" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="col-md-4">
+            <div class="contact-page-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125322.5134688553!2d76.88483286798547!3d11.01395778797012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1736866933606!5m2!1sen!2sin"
+                width="100%"
+                height="420"
+                style="border: 0"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section Ends -->
+
+    <!-- Footer Section Starts -->
+    <footer class="text-white pt-4 pb-3">
+      <div class="container">
+        <div class="row align-items-start">
+          <!-- Logo -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="d-flex align-items-center">
+              <a
+                href="../index.html"
+                class="d-flex align-items-center text-decoration-none"
+              >
+                <img
+                  src="../images/assets/my logo.png"
+                  alt="Logo"
+                  class="me-2"
+                  style="width: 60px; height: 40px"
+                />
+                <span class="fw-bold transparent-text">SATHISH PORTFOLIO</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="../index.html"
+                  class="footer-link text-decoration-none d-flex align-items-center"
+                >
+                  <i class="fa-solid fa-house me-2"></i>Home
+                </a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="../About Me/about.html"
+                  class="footer-link text-decoration-none d-flex align-items-center"
+                >
+                  <i class="bi bi-person me-2"></i>About
+                </a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="../Skills/skills.html"
+                  class="footer-link text-decoration-none d-flex align-items-center"
+                >
+                  <i class="fa-solid fa-code me-2"></i>Skills
+                </a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="../Projects/project.html"
+                  class="footer-link text-decoration-none d-flex align-items-center"
+                >
+                  <i class="bi bi-folder me-2"></i>Projects
+                </a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="../Contact Us/contact.html"
+                  class="footer-link text-decoration-none d-flex align-items-center"
+                >
+                  <i class="bi bi-envelope me-2"></i>Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media -->
+          <div class="col-md-4">
+            <h5 class="mb-3">Follow Me</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="https://github.com/sathishkumar1218"
+                  target="_blank"
+                  class="text-decoration-none d-flex align-items-center"
+                >
+                  <i class="bi bi-github me-2"></i
+                  ><span class="text-white">GitHub</span>
+                </a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://www.linkedin.com/in/sathishkumarsubramaniam96/"
+                  target="_blank"
+                  class="text-decoration-none d-flex align-items-center"
+                >
+                  <i class="bi bi-linkedin me-2"></i
+                  ><span class="text-white">LinkedIn</span>
+                </a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://x.com/Sathish964099?t=B0iCy0sNP9GkQhgTJ614_Q&s=08"
+                  target="_blank"
+                  class="text-decoration-none d-flex align-items-center"
+                >
+                  <i class="bi bi-twitter me-2"></i
+                  ><span class="text-white">Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="row mt-4">
+          <div class="col text-center">
+            <p class="mb-1">&copy; 2025 All rights reserved.</p>
+            <p class="mb-0">
+              Thank you for visiting my portfolio website. Feel free to reach
+              out for collaborations or inquiries.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer Section Ends -->
+
+    <!------ HTML Form Data To Google Sheets Starts-->
+    <script>
+      let url =
+        "https://script.google.com/macros/s/AKfycbxu7iWT_TEzmqztYVvI4l1159nIoKpX1LfaQxG1dvgAD8rkc3DLzvwj6T1a_cgjZF1h/exec";
+      let form = document.querySelector("#contactForm");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        let formData = new FormData(form);
+
+        fetch(url, {
+          method: "POST",
+          body: formData,
+        })
+          .then((res) => res.text())
+          .then((response) => {
+            console.log(response);
+            alert("Form submitted successfully!");
+            form.reset();
+          })
+          .catch((error) => {
+            console.error("Error submitting form:", error);
+            alert("Failed to submit form.");
+          });
+      });
+    </script>
+    <!--HTML Form Data To Google Sheets Ends-->
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,485 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  /* To make the text visible on the black background */
+}
+
+/* Navigation Links  Section Starts*/
+
+.navbar-nav .nav-link {
+  color: #bbb !important;
+  /* Default color for inactive links */
+  transition: color 0.3s ease-in-out;
+    text-decoration: none !important;
+    font-size: 1.8rem;
+}
+.navbar-nav .nav-link.active {
+  color: white !important;
+  font-weight: bold;
+}
+.navbar-nav .nav-link {
+  font-size: 18px;
+  color: #bbb !important;
+  transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+a.d-flex.align-items-center img {
+  margin-left: 10px; /* space from the left side */
+}
+
+/* Transparent Color For SATHISH PORTFOLIO TEXT */
+.transparent-text {
+  background: linear-gradient(90deg, #f9d423, #ff4e50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* fallback for non-webkit browsers */
+  font-size: 20px;
+}
+
+/* Navigation Link Section Ends */
+
+
+
+/* About Section Starts */
+
+/* Animation for Image */
+
+.animated-image {
+  animation: slideInFromTop 1s ease-out forwards;
+  opacity: 0;
+}
+
+/* Animation for Title */
+
+.animated-title {
+  animation: slideInFromLeft 1s ease-out forwards;
+  opacity: 0;
+}
+
+/* Animation for Paragraph */
+
+.animated-paragraph {
+  animation: slideInFromRight 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+#about h2 {
+  color: #fff;
+  /* Ensures the heading text is black */
+}
+
+.animated-paragraph {
+  color: white !important;
+  /* Ensures the text color is white */
+}
+
+/* Keyframes for Image Animation */
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for Title Animation */
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Keyframes for Paragraph Animation */
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.name-text {
+  font-size: 2rem;
+  font-weight: 700;
+  /* Bold text */
+  color: #fff;
+  /* White text color */
+}
+
+.position-text {
+  font-size: 1.8rem; /* Adjust font size */
+  font-weight: 700; /* Bold text */
+  color: orangered; /* Text color */
+  display: inline-block; /* Ensures smooth animation */
+  position: relative;
+  animation: slideText 3s ease-in-out infinite alternate; /* Forward & backward motion */
+}
+
+/* Keyframes for forward & backward movement */
+
+@keyframes slideText {
+  0% {
+    transform: translateX(0);
+    /* Start position */
+  }
+  50% {
+    transform: translateX(20px);
+    /* Move forward */
+  }
+  100% {
+    transform: translateX(0);
+    /* Move back to original position */
+  }
+}
+
+/* About Section Ends */
+
+/* Skills Section Animation  Starts */
+
+/* Skills Section  cardsAnimation  */
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animation to all skill cards with delay */
+
+.row .col-6:nth-child(1) {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.row .col-6:nth-child(2) {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+.row .col-6:nth-child(3) {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+.row .col-6:nth-child(4) {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+.row .col-6:nth-child(5) {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.row .col-6:nth-child(6) {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+  animation-delay: 1.2s;
+}
+
+.row .col-6:nth-child(7) {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+  animation-delay: 1.4s;
+}
+
+.row .col-6:nth-child(8) {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+  animation-delay: 1.6s;
+}
+
+/* Apply animation to first 4 skill cards */
+
+.row .col-6:nth-child(1) {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.row .col-6:nth-child(2) {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+.row .col-6:nth-child(3) {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+.row .col-6:nth-child(4) {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes slideLeftToRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.animate-left-to-right {
+  animation: slideLeftToRight 1s ease-out forwards;
+}
+/*  Skills Section Animation Ends */
+
+/* Contact Section Starts */
+
+.contact-page-sec {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.contact-info {
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-icon {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.contact-info-text h2 {
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.contact-info-text span {
+  /* font-size: 14px; */
+  color: #555555;
+  font-weight: bold;
+}
+
+.contact-page-form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page-form h2 {
+  font-size: 1.8rem;
+  color: #333333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.single-input-field input,
+.single-input-field textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #555555;
+}
+
+.single-input-field input:focus,
+.single-input-field textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.single-input-field textarea {
+  height: 120px;
+  resize: none;
+}
+
+.single-input-fieldsbtn input[type="submit"] {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.single-input-fieldsbtn input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.contact-page-map iframe {
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+/* Contact Section Ends */
+
+/* Responsive Design Starts */
+
+@media (max-width: 768px) {
+  .contact-info {
+    margin-bottom: 30px;
+  }
+  .contact-page-form {
+    margin-bottom: 30px;
+  }
+  .contact-page-map iframe {
+    height: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-info-text h2 {
+    font-size: 1.3rem;
+  }
+  .contact-info-text span {
+    font-size: 0.9rem;
+  }
+  .contact-page-form h2 {
+    font-size: 1.5rem;
+  }
+  .single-input-fieldsbtn input[type="submit"] {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .row {
+    /* flex-direction: column; */
+    text-align: center;
+  }
+  footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+  footer .d-flex {
+    justify-content: center;
+  }
+}
+/* Responsive Design Ends */
+
+/* Footer Section Starts */
+
+footer {
+  background-color: #000000; /* Dark background */
+  color: #fff; /* White text color */
+  padding: 40px 20px; /* Space around the footer content */
+  font-family: Arial, sans-serif;
+}
+
+footer .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+footer h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f8f9fa;
+  /* Light text for headings */
+  margin-bottom: 20px;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer a {
+  color: #00bcd4;
+  /* Light blue link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+  /* White color on hover */
+}
+
+footer .footer-link {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Social Media Links */
+
+footer .social-icon {
+  font-size: 20px;
+  color: #00bcd4;
+  /* Light blue icon color */
+  transition: color 0.3s ease;
+}
+
+footer .social-icon:hover {
+  color: #fff;
+  /* White icon color on hover */
+}
+
+footer .d-flex.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+footer .me-2 {
+  margin-right: 10px;
+}
+
+footer .mb-0 {
+  margin-bottom: 0;
+}
+
+footer .text-white {
+  color: #fff;
+}
+
+footer .fw-bold {
+  font-weight: bold;
+}
+
+.thank {
+  margin-top: 10px;
+  /* Adjust the value as needed */
+}
+/* Footer Section Ends */
+
+/*  Modal Text Color And Modal Padding  */
+.modal-body {
+  padding: 20px;
+  color: black;
+}
+/* Modal Text Color And Modal padding Ends */
